@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Apply CORS settings to all endpoints
-                        .allowedOrigins("http://localhost:3001") // Allow requests from this origin
+                        .allowedOrigins("http://localhost:3001","https://clever-rolypoly-ba2370.netlify.app/","https://clever-rolypoly-ba2370.netlify.app","https://www.krshisathinow.xyz/") // Allow requests from this origin
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Allow these HTTP methods
                         .allowedHeaders("*") // Allow all headers
                         .allowCredentials(true); // Allow credentials (e.g., cookies)
